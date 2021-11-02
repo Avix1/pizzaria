@@ -1,4 +1,5 @@
-import { FormControl, FormLabel, Input as ChakraInput, InputProps as ChakraInputProps } from '@chakra-ui/react';
+import { FormControl, FormLabel, Input as ChakraInput, InputProps as ChakraInputProps, Icon } from '@chakra-ui/react';
+import { AiOutlineSearch } from 'react-icons/ai'
 
 interface InputProps extends ChakraInputProps {
     name: string;
@@ -23,6 +24,7 @@ export function Input({ name, label, ...rest }: InputProps) {
         size="lg"
         {...rest}
         />
+
         </FormControl>
     )
 }
